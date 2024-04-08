@@ -1,0 +1,88 @@
+
+### 1. Formatting Style:
+
+Formatting styles in HTML allow you to control the appearance of your content. While HTML itself is primarily about structure and semantics, you can use CSS (Cascading Style Sheets) to apply various styles such as colors, fonts, margins, and more to your HTML elements.
+
+**Example: Applying Styles Inline:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting Style Example</title>
+    <style>
+        /* CSS styles can be applied inline within HTML using the 'style' attribute */
+        p {
+            color: blue;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>This paragraph has blue text and Arial font.</p>
+</body>
+</html>
+```
+
+**Explanation:**
+- In the example above, we've applied styles directly to the `<p>` (paragraph) element using the `style` attribute.
+- The `color` property sets the text color to blue, while `font-family` specifies the font family to be used.
+- Inline styles are useful for applying styles to specific elements without affecting others.
+
+**Example: External Stylesheet:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Stylesheet Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>This paragraph has styles applied from an external stylesheet.</p>
+</body>
+</html>
+```
+
+**Explanation:**
+- Alternatively, you can define styles in an external CSS file and link it to your HTML document using the `<link>` element.
+- This separates the content from presentation, making it easier to manage and maintain styles across multiple pages.
+
+### 2. Global Attributes:
+
+Global attributes are attributes that can be applied to any HTML element, regardless of its type. These attributes provide additional information about the elements and can be used to modify their behavior or appearance.
+
+**Common Global Attributes:**
+1. **id**: Specifies a unique identifier for an element, which can be used for CSS styling or JavaScript manipulation.
+2. **class**: Assigns one or more class names to an element, allowing you to apply CSS styles or target elements with JavaScript.
+3. **style**: Applies inline CSS styles to an element.
+4. **title**: Adds a tooltip or advisory information to an element that is displayed when the mouse hovers over it.
+5. **lang**: Specifies the language of the content within an element.
+6. **dir**: Specifies the text direction (ltr for left-to-right, rtl for right-to-left).
+7. **accesskey**: Defines a keyboard shortcut to focus or activate an element.
+
+**Example: Using Global Attributes:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Attributes Example</title>
+</head>
+<body>
+    <p id="paragraph1" class="highlighted" style="color: red;" title="This is a paragraph.">Hello, World!</p>
+</body>
+</html>
+```
+
+**Explanation:**
+- In the example above, we've applied several global attributes to the `<p>` element:
+  - `id="paragraph1"` assigns a unique identifier to the paragraph.
+  - `class="highlighted"` assigns the class name "highlighted" to the paragraph, which can be used for styling.
+  - `style="color: red;"` applies inline CSS styles to set the text color to red.
+  - `title="This is a paragraph."` adds a tooltip with the specified text.
+
+Global attributes provide flexibility and customization options when working with HTML elements, allowing you to tailor their behavior and appearance according to your needs.
