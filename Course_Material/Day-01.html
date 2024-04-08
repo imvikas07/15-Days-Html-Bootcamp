@@ -1,0 +1,62 @@
+Sure, let's break down both HTML and VS Code, and then I'll explain how to run HTML code using the Live Server extension in VS Code.
+
+### HTML (Hypertext Markup Language)
+
+HTML is the standard markup language used to create and design web pages. It stands for Hypertext Markup Language. HTML provides the structure of a webpage by using various tags and attributes to define different elements such as headings, paragraphs, images, links, and more. These elements are then rendered by web browsers to display the content to users.
+
+Here's a brief overview of some key concepts in HTML:
+
+- **Tags**: HTML uses tags to define different elements. Tags are enclosed in angle brackets (`< >`). For example, `<h1>` defines a top-level heading, `<p>` defines a paragraph, and `<img>` defines an image.
+- **Attributes**: Tags can have attributes that provide additional information about the element. Attributes are placed within the opening tag and provide characteristics such as source (`src`), href, width, height, etc.
+- **Structure**: HTML documents have a hierarchical structure with elements nested within other elements. The basic structure of an HTML document consists of `<html>`, `<head>`, and `<body>` tags.
+- **Semantic HTML**: Semantic HTML refers to using HTML tags that convey meaning beyond just presentation. For example, `<header>`, `<footer>`, `<nav>`, and `<article>` are semantic tags that describe the purpose of the content they contain.
+
+### Visual Studio Code (VS Code)
+
+Visual Studio Code is a popular source-code editor developed by Microsoft for Windows, Linux, and macOS. It provides robust features for editing, debugging, and managing code across various programming languages and frameworks.
+
+Some key features of VS Code include:
+
+- **IntelliSense**: VS Code offers intelligent code completion, syntax highlighting, and code suggestions based on the language being used.
+- **Extensions**: VS Code has a rich ecosystem of extensions that provide additional functionality. Extensions can be installed to enhance support for specific languages, frameworks, or tools.
+- **Integrated Terminal**: VS Code includes an integrated terminal that allows developers to run commands and scripts directly within the editor.
+- **Version Control**: Git integration is built into VS Code, allowing developers to manage version control directly within the editor.
+
+### Running HTML Code Using Live Server in VS Code
+
+The Live Server extension in VS Code allows you to run your HTML code in a local development server with live reloading. This means that any changes you make to your HTML file will be immediately reflected in the browser without needing to manually refresh the page.
+
+Here's how to run HTML code using Live Server:
+
+1. **Install Live Server**: If you haven't already installed the Live Server extension, you can do so by opening VS Code, navigating to the Extensions view (Ctrl+Shift+X), and searching for "Live Server". Click on the Install button to install the extension.
+
+2. **Open your HTML file**: Open the HTML file you want to run in VS Code.
+
+3. **Start Live Server**: Right-click anywhere in the HTML file and select the "Open with Live Server" option from the context menu. Alternatively, you can use the shortcut by clicking "Go Live" in the status bar at the bottom right corner of the VS Code window.
+
+4. **View your HTML page**: VS Code will automatically open your default web browser and navigate to the local development server where your HTML file is being served. You can now view your HTML page in the browser.
+
+5. **Edit and Save**: Make any changes to your HTML file in VS Code and save the file. Live Server will automatically reload the page in the browser to reflect the changes.
+
+By using Live Server in VS Code, you can streamline your HTML development workflow and see your changes in real-time as you edit your HTML files. This helps in faster development and easier debugging.
+
+<!DOCTYPE html>
+<!-- The <!DOCTYPE html> declaration is used to indicate to the browser that the document is an HTML5 document. It must be placed at the very beginning of the HTML file. -->
+<html lang="en">
+<!-- The <html> element is the root element of an HTML page. The 'lang' attribute specifies the language of the document, which helps assistive technologies and search engines understand the content. In this case, 'en' indicates English. -->
+<head>
+    <!-- The <head> element contains meta-information about the document, such as its title, character encoding, and viewport settings. It's not displayed on the web page itself. -->
+    <meta charset="UTF-8">
+    <!-- The <meta charset="UTF-8"> tag specifies the character encoding for the document. UTF-8 is a character encoding capable of encoding all possible characters. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The <meta name="viewport" content="width=device-width, initial-scale=1.0"> tag sets the viewport width to the width of the device's screen and sets the initial zoom level to 1.0, which means no zoom. This is crucial for responsive design, ensuring that web pages look good on various devices with different screen sizes. -->
+    <title>Html Bootcamp</title>
+    <!-- The <title> element sets the title of the web page, which appears in the browser's title bar or tab. -->
+</head>
+<body>
+    <!-- The <body> element contains the content of the web page that is visible to the user. -->
+    <h1>Hello World</h1>
+    <!-- The <h1> element represents the top-level heading of the document. In this case, it displays the text "Hello World". -->
+</body>
+</html>
+<!-- The closing </html> tag marks the end of the HTML document. All HTML content must be placed between the opening <html> and closing </html> tags. -->
